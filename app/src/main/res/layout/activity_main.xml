@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/halloween_jpg"
+    android:padding="16dp">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="end"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        tools:ignore="DuplicateIds,RtlCompat" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="20dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:gravity="end"/>
+
+
+
+    <!-- GridLayout for Calculator Buttons -->
+    <GridLayout
+        android:id="@+id/button_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display"
+        android:layout_marginTop="10dp"
+        android:columnCount="4"
+        android:useDefaultMargins="true"
+        android:layout_gravity="center">
+
+        <!-- Numeric Buttons -->
+        <Button
+            android:id="@+id/num7"
+            android:text="7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num8"
+            android:text="8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num9"
+            android:text="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Divide"
+            android:text="/"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <!-- Numeric Buttons -->
+        <Button
+            android:id="@+id/num4"
+            android:text="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num5"
+            android:text="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num6"
+            android:text="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Multiply"
+            android:text="*"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#9C27B0"
+            android:textColor="@color/white" />
+
+        <!-- Numeric Buttons -->
+        <Button
+            android:id="@+id/num1"
+            android:text="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num2"
+            android:text="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num3"
+            android:text="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Minus"
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#9C27B0"
+            android:textColor="@color/white" />
+
+        <!-- Special Buttons -->
+        <Button
+            android:id="@+id/negative"
+            android:text="+/-"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#4CAF50"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/num0"
+            android:text="0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FF9800"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Point"
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#4CAF50"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Plus"
+            android:text="+"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#9C27B0"
+            android:textColor="@color/white" />
+
+        <!-- Special Function and Delete Buttons -->
+        <Button
+            android:id="@+id/Sign1"
+            android:text="~"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FFEB3B"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Sign2"
+            android:text="~"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#FFEB3B"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Delete"
+            android:text="DEL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="15sp"
+            android:background="#000000"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Equal"
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="20sp"
+            android:background="#4CAF50"
+            android:textColor="@color/white" />
+
+    </GridLayout>
+</RelativeLayout>
+
